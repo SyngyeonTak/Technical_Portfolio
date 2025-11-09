@@ -1,0 +1,45 @@
+[
+    {
+      "name": "--batch_size",
+      "type": "int",
+      "default": 512,
+      "help": "input batch size"
+    },
+    {
+      "name": "--hidden_size",
+      "type": "int",
+      "default": 100,
+      "help": "hidden state size of gru module"
+    },
+    {
+      "name": "--embed_dim",
+      "type": "int",
+      "default": 50,
+      "help": "the dimension of item embedding"
+    },
+    {
+      "name": "--lr",
+      "type": "float",
+      "default": 0.001,
+      "help": "learning rate"
+    },
+    {
+      "name": "--lr_dc",
+      "type": "float",
+      "default": 0.1,
+      "help": "learning rate decay rate"
+    },
+    {
+      "name": "--lr_dc_step",
+      "type": "int",
+      "default": 80,
+      "help": "the number of steps after which the learning rate decay"
+    },
+    {
+      "name": "--valid_portion",
+      "type": "float",
+      "default": 0.1,
+      "help": "split the portion of training set as validation set"
+    }
+  ]
+  

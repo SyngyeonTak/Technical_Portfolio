@@ -1,0 +1,81 @@
+[
+    {
+      "name": "--batchSize",
+      "type": "int",
+      "default": 100,
+      "help": "input batch size"
+    },
+    {
+      "name": "--hiddenSize",
+      "type": "int",
+      "default": 100,
+      "help": "hidden state size"
+    },
+    {
+      "name": "--worker",
+      "type": "int",
+      "default": 3,
+      "help": "number of worker"
+    },
+    {
+      "name": "--lr",
+      "type": "float",
+      "default": 0.001,
+      "help": "learning rate"
+    },
+    {
+      "name": "--lr_dc",
+      "type": "float",
+      "default": 0.1,
+      "help": "learning rate decay rate"
+    },
+    {
+      "name": "--lr_dc_step",
+      "type": "int",
+      "default": 3,
+      "help": "the number of steps after which the learning rate decay"
+    },
+    {
+      "name": "--l2",
+      "type": "float",
+      "default": 0.0,
+      "help": "l2 penalty"
+    },
+    {
+      "name": "--step",
+      "type": "int",
+      "default": 2,
+      "help": "propogation steps"
+    },
+    {
+      "name": "--window",
+      "type": "int",
+      "default": 1,
+      "help": "window size"
+    },
+    {
+      "name": "--nonhybrid",
+      "action": "store_true",
+      "default": false,
+      "help": "only use the global preference to predict"
+    },
+    {
+      "name": "--validation",
+      "action": "store_true",
+      "default": false,
+      "help": "validation"
+    },
+    {
+      "name": "--valid_portion",
+      "type": "float",
+      "default": 0.1,
+      "help": "split the portion of training set as validation set"
+    },
+    {
+      "name": "--dropout",
+      "type": "float",
+      "default": 0.3,
+      "help": "dropout rate"
+    }
+  ]
+  
