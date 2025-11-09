@@ -35,12 +35,11 @@ def calculate_cosine_similarity(embeddings, batch_size=1000):
 ## 2️. 데이터 활용 및 분석
 **평가 항목:** 머신러닝 라이브러리를 이용한 재현 가능한 개발 결과물 공개 여부  
 **수행 내용:**  
-- 기존 pytorch_geometirc의 metapath2vec 라이브러리를 SBRs(세션 기반 추천 시스템) 도메인에 맞게 커스터마이징 
-- 사용 라이브러리: pytorch_geometirc
+- pytorch_geometirc, torch 라이브러리를 사용하여 Metapath2vec 라이브러리를 재현하였으며 SBRs(세션 기반 추천 시스템) 도메인에 맞게 커스터마이징하였다.
   
 **관련 코드:**  
 - [preprocess/metapath2vec.py](./preprocess/metapath2vec.py)
-```
+```python
 from typing import Dict, List, Optional, Tuple
 import torch
 from torch import Tensor
@@ -92,12 +91,9 @@ def _pos_sample(self, batch: Tensor) -> Tensor:
 ## 3️. 데이터 시각화
 **평가 항목:** Python, R 등을 활용한 데이터 시각화 능력  
 **수행 내용:**  
-- `matplotlib`, `seaborn`을 이용하여 epoch별 성능 지표 시각화  
+- jupyter note에 python `matplotlib`, `seaborn`라이브러리를 이용하여 딥러닝 학습 결과를 epoch별 성능 지표 시각화하였다.  
 
 **관련 코드:**  
-- [visualization_metrics.py](./visualization_metrics.py)  
-- [plot_training_results.ipynb](./plot_training_results.ipynb)
-
+- [visualize.py](visualize.py)  
 ---
 
-📄 각 항목별 상세 설명은 상위 폴더 내 `README_detail.md` 참조
