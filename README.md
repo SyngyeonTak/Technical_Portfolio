@@ -111,6 +111,6 @@ def _pos_sample(self, batch: Tensor) -> Tensor:
 - 생성된 그래프는 학습 수렴 속도와 모델 안정성을 직관적으로 평가할 수 있는 근거 자료로 활용됨.
 - 
 **관련 코드:**  
-- [visualize.py](visualize.py)  
+- [visualize.py](visualize.ipynb)  
 ---
 
