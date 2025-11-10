@@ -44,6 +44,12 @@ def calculate_cosine_similarity(embeddings, batch_size=1000):
 - `context_size`, `walk_length`, `walks_per_node` 등을 하이퍼파라미터로 받아 다양한 그래프 크기 및 메타 구조에 대응 가능하게 설계함.  
 - 결과적으로 세션 내 아이템 간의 **의미적 인접성(semantic proximity)**을 유지하면서도, heterogeneous graph 구조를 효율적으로 학습할 수 있도록 최적화함.
 
+**실행 방법:**  
+- 최상 디렉터리에서 **python3 ./preprocess/main.py** 실행
+
+**실행 결과물:**  
+- [node_embeddings.npy](embeddings/metapath2vec/Tmall/node_embeddings_all_100.npy)
+
 **관련 코드:**  
 - [preprocess/metapath2vec.py](./preprocess/metapath2vec.py)
 ```python
